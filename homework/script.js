@@ -35,7 +35,7 @@ listDiv.addEventListener("click", function(e) {
     console.log("selectedList", selectedList);
 
     updateLists();
-    updateItemsForSelectedList(;
+    updateItemsForSelectedList();
 });
 
 // ------------------------------------------------------
@@ -61,8 +61,8 @@ function updateLists() {
         aElement.appendChild(textNode);
 
         listDiv.appendChild(aElement);
-    );
-}
+    ;
+});
 
 function updateItemsForSelectedList() {
     while (itemDiv.hasChildNodes()) {
@@ -151,4 +151,6 @@ function closePopups() {
     popupsArray.forEach(function(popup) {
         popup.style.display = "none";
     });
+};
+
 }
